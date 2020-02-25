@@ -62,7 +62,7 @@ pdfkeywords={Cheatsheet, Programming, Slice}
 
 \put(10,200){ % Position on the page to put the title
 \begin{minipage}[t]{210mm} % The size and alignment of the title
-\section*{Slice Cheatsheet -- Presented By Nervos Network} % Title
+\section*{Slice Cheatsheet -- Syntaxes in Different Languages} % Title
 \end{minipage}
 }
 
@@ -74,7 +74,7 @@ pdfkeywords={Cheatsheet, Programming, Slice}
 \begin{minipage}[t]{85mm} % Create a box to house text
 
 %----------------------------------------------------------------------------------------
-%	HEADING ONE
+%	HEADING
 %----------------------------------------------------------------------------------------
 
 \sectiontitle{Definitions}
@@ -90,6 +90,11 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8]\\
 
 \command{arr[1:5]}{[2, 3, 4, 5]}
 
+\sectiontitle{Python}
+\command{arr[1:5]}{[2, 3, 4, 5]}
+\command{arr[1:5:2]}{[2, 4]}
+\command{arr[1:5:3]}{[2, 5]}
+
 %----------------------------------------------------------------------------------------
 
 \end{minipage} % End the first column of text
@@ -103,41 +108,27 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8]\\
 \begin{minipage}[t]{85mm} % Create a box to house text
 
 %----------------------------------------------------------------------------------------
-%	HEADING FOUR
+%	HEADING
 %----------------------------------------------------------------------------------------
 
-\sectiontitle{Navigation}
+\sectiontitle{Ruby}
 
-\command{Mod4 + j}{Focus next client}
-\command{Mod4 + k}{Focus previous client}
-\command{Mod4 + u}{Focus first urgent client}
-\command{Mod4 + Left}{View previous tag}
-\command{Mod4 + Right}{View next tag}
-\command{Mod4 + 1-9}{Switch to tag 1-9}
-\command{Mod4 + Ctrl + j}{Focus next screen}
-\command{Mod4 + Ctrl + k}{Focus previous screen}
-\command{Mod4 + j}{Focus next client}
-\command{Mod4 + k}{Focus previous client}
-\command{Mod4 + u}{Focus first urgent client}
-\command{Mod4 + Esc}{Focus previously selected tag set}
+\command{arr[1, 5]}{[2, 3, 4, 5, 6]}
+\command{arr[2, 5]}{[3, 4, 5, 6, 7]}
+\command{arr[1..5]}{[2, 3, 4, 5, 6]}
+\command{arr[2..5]}{[3, 4, 5, 6]}
+\command{arr[2...5]}{[3, 4, 5]}
+\command{arr[2..-1]}{[3, 4, 5, 6, 7, 8]}
+\command{arr[2...-1]}{[3, 4, 5, 6, 7]}
 					
-%----------------------------------------------------------------------------------------
-%	HEADING FIVE
-%----------------------------------------------------------------------------------------				
-					
-\sectiontitle{Layout modification} % Heading five
+\sectiontitle{ECMAScript TC39}
 
-\command{Mod4 + Shift + k / j}{Rotate clients around}
-\command{Mod4 + h / l}{Change master width by 5\%}
-\command{Mod4 + Shift + h}{Number of master windows +1}
-\command{Mod4 + Shift + l}{Number of master windows --1}
-\command{Mod4 + Ctrl + h}{Number of columns for non-master windows +1}
-\command{Mod4 + Ctrl + l}{Number of columns for non-master windows --1}
+\command{arr[1:4]}{[2, 3, 4]}
+\command{arr[1:4:2]}{[2, 4]}
 
-\command{Mod4 + Space}{Next layout}
-\command{Mod4 + Shift + Space}{Previous layout}
-\command{Mod4 + Ctrl + Space}{Floating master}
-\command{Mod4 + Ctrl + Return}{Swap focused client with master}
+const obj = { 0: 'a', 1: 'b', 2: 'c', 3: 'd', length: 4 }; \\
+
+\command{obj[1:3]}{['b', 'c']}
 
 %----------------------------------------------------------------------------------------
 
@@ -152,28 +143,6 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8]\\
 \begin{minipage}[t]{85mm} % Create a box to house tex
 
 %----------------------------------------------------------------------------------------
-%	IMPORTANT FILES
-%----------------------------------------------------------------------------------------
-
-\sectiontitle{Important files}
-
-\texttt{/.config/awesome/rc.lua}
-
-\texttt{/etc/xdg/awesome/rc.lua}
-
-\vspace{\baselineskip} % Whitespace before the next section
-
-%----------------------------------------------------------------------------------------
-%	LINKS AND INFORMATION
-%----------------------------------------------------------------------------------------
-
-\sectiontitle{Links and information}
-
-\url{http://awesome.naquadah.org/}
-
-\url{http://awesome.naquadah.org/wiki/}
-
-%----------------------------------------------------------------------------------------
 %	FOOTNOTE
 %----------------------------------------------------------------------------------------
 
@@ -182,8 +151,8 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8]\\
 {\color{mygray}\line(1,0){30}} % Print the line with a custom color
 
 \footnotesize{
-Created by John Smith, 2015\\ 
-\url{http://johnsmith.com/}\\
+Maintained by the Nervos team, 2020\\ 
+\url{https://www.nervos.org/}\\
 				
 Released under the MIT license.
 }
